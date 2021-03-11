@@ -35,7 +35,7 @@ jobs:
         prerelease: false
 
     - name: Upload package tarball as release asset
-      id: upload-release-asset
+      id: upload-release-asset-tarball
       uses: actions/upload-release-asset@v1
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
@@ -46,7 +46,7 @@ jobs:
           asset_content_type: application/gzip
 
     - name: Upload a PDF as release asset
-      id: upload-release-asset
+      id: upload-release-asset-pdf
       uses: actions/upload-release-asset@v1
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

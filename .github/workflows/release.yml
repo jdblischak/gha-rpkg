@@ -6,7 +6,7 @@ name: Create a release from a tag
 on:
   push:
     tags:
-      - 'v*'
+      - '*'
 jobs:
   release:
     runs-on: ubuntu-18.04
